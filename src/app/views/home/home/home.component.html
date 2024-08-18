@@ -1,0 +1,23 @@
+<div class="slider-container" #sliderContaine>
+  <div class="slider">
+    <div *ngIf="currentIndex===0" class="slide starter">
+      <div>
+        <button (click)="selectStarter()" routerLink="menu">Entrantes</button>
+      </div>
+    </div>
+    <div *ngIf="currentIndex===1" class="slide main">
+      <div>
+        <button (click)="selectMain()" routerLink="menu">Comidas</button>
+      </div>
+    </div>
+    <div *ngIf="currentIndex===2" class="slide dessert">
+      <div>
+        <button (click)="selectDessert()" routerLink="menu">Postres</button>
+      </div>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button (click)="prevSlide()">Anterior</button>
+    <button (click)="nextSlide()">Siguiente</button>
+  </div>
+</div>

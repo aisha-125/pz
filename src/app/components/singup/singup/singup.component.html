@@ -1,0 +1,8 @@
+<form (ngSubmit)="singup(singupForm)" #singupForm="ngForm">
+    <div class="img-container"><img src="./assets/img/Logo_Pizza.png"></div>
+    <h2>Crear cuenta</h2>
+    <input placeholder="Nombre" name="usernamedSingup" id="usernameSingup" [(ngModel)]="username" required>
+    <input placeholder="Correo eléctronico" name="emailSingup" id="emailSingup" [(ngModel)]="email" required>
+    <input placeholder="Contraseña" name="passwordSingup" id="passwordSingup" [(ngModel)]="password" required>
+    <button type="submit">Crear</button>
+</form>

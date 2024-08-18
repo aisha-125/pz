@@ -1,0 +1,7 @@
+<form (ngSubmit)="login(loginForm)" #loginForm="ngForm">
+    <div class="img-container"><img src="./assets/img/Logo_Pizza.png"></div>
+    <h2>Iniciar sesión</h2>
+    <input placeholder="Correo eléctronico" name="emailLogin" id="emailLogin" [(ngModel)]="email" required>
+    <input placeholder="Contraseña" name="passwordLogin" id="passwordLogin" [(ngModel)]="password" required>
+    <button type="submit">Iniciar</button>
+</form>

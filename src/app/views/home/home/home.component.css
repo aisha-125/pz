@@ -1,0 +1,74 @@
+.slider-container {
+  width: 80vw;
+  height: 75vh;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.slider {
+  border-radius: 15px;
+  display: flex;
+  height: 90%;
+  transition: transform 0.5s ease;
+  background-color: #E76F51;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  width: 97%;
+  height: 98%;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.starter{
+  background-image: url('./../../../../assets/img/entrantes.png');
+}
+
+.main{
+  background-image: url('./../../../../assets/img/principal.png');
+}
+
+.dessert{
+  background-image: url('./../../../../assets/img/postres.png');
+}
+
+.btn-container {
+  margin-top: 10px;
+  width: 100%;
+  height: 5%;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: block;
+  margin: auto auto 30px auto;
+  background-color: #264653;
+  color: #FFFFFF;
+  border-radius: 10px;
+  width: 96px;
+  height: 40px;
+  padding: auto;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.slide > div {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

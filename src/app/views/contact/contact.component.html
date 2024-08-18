@@ -1,0 +1,7 @@
+<form (ngSubmit)="contact(contactForm)" #contactForm="ngForm">
+  <div class="img-container"><img src="./assets/img/Logo_Pizza.png"></div>
+  <h2>Contactar</h2>
+  <input placeholder="name" name="name" [(ngModel)]="name" required>
+  <input placeholder="message" name="message" [(ngModel)]="message" required>
+  <button type="submit">Enviar</button>
+</form>

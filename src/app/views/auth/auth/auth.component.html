@@ -1,0 +1,12 @@
+<div *ngIf="account" class="form-container">
+    <app-login></app-login>
+    <div (click)="switchAccountStatus()" class="account-status" >
+        <p>No tengo una cuenta</p>
+    </div>
+</div>
+<div *ngIf="!account" class="form-container">
+    <app-singup></app-singup>
+    <div (click)="switchAccountStatus()" class="account-status">
+        <p>Ya tengo una cuenta</p>
+    </div>
+</div>

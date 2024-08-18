@@ -1,0 +1,21 @@
+<div *ngIf="menuSelected === 'starters'" class="card-list">
+	<div *ngFor="let food of starters" class="card">
+		<h3 class="food-type">{{food.type}}</h3>
+		<p class="food-ingredients">{{food.ingredients}}</p>
+		<p class="food-price">{{food.price}}</p>
+	</div>
+</div>
+<div *ngIf="menuSelected === 'main-course'" class="card-list">
+	<div *ngFor="let food of mainCourses" class="card">
+		<h3 class="food-type">{{food.type}}</h3>
+		<p class="food-ingredients">{{food.ingredients}}</p>
+		<p class="food-price">{{food.price}}</p>
+	</div>
+</div>
+<div *ngIf="menuSelected === 'desserts'" class="card-list">
+	<div *ngFor="let food of desserts" class="card">
+		<h3 class="food-type">{{food.type}}</h3>
+		<p class="food-ingredients">{{food.ingredients}}</p>
+		<p class="food-price">{{food.price}}</p>
+	</div>
+</div>

@@ -1,0 +1,64 @@
+header {
+  width: 100%;
+  height: 55px;
+  background-color: #E9C46A;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container>div {
+  max-width: 33vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-bar-container {
+  z-index: 100;
+}
+
+img {
+  cursor: pointer;
+}
+
+.pizza-icon{
+  background-color: #DFDFDF;
+  border-radius: 100px;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-image: url('./../../../../assets/img/pizza-icon.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+
+}
+
+.nav-menu {
+  display: none;
+}
+
+.account_circle:hover+.nav-menu {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  right: 0px;
+  top: 55px;
+}
+
+.nav-menu:hover {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  right: 0px;
+  top: 55px;
+}

@@ -1,0 +1,34 @@
+{
+  "food":[
+    {
+      "starters":[
+        {
+          "id":1,
+          "type":"Palitos mozzarella",
+          "ingredients":"Harina y queso",
+          "price":4.25
+        }
+      ]
+    },
+    {
+      "main-course":[
+        {
+          "id":1,
+          "type":"Pizza margarita",
+          "ingredients":"Tomate, oregano y queso",
+          "price":11.45
+        }
+      ]
+    },
+    {
+      "desserts":[
+        {
+          "id":1,
+          "type":"Coulant de chocolate",
+          "ingredients":"Chocolate y harina",
+          "price":3.50
+        }
+      ]
+    }
+  ]
+}

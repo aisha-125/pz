@@ -1,0 +1,17 @@
+<header>
+  <div class="container">
+    <div id="search-bar-container">
+      <app-search-bar></app-search-bar>
+    </div>
+    <div class="img-container">
+      <img routerLink="/" src=".\assets\img\logo-header.png" alt="Logo">
+    </div>
+    <div>
+        <img  routerLink="login" *ngIf="!loginStatus" class="account_circle" src=".\assets\img\account_circle.png" alt="Imagen de cuenta sin iniciar sesión">
+        <div *ngIf="loginStatus" class="account_circle pizza-icon"></div>
+        <div class="nav-menu" *ngIf="loginStatus">
+          <app-nav-menu></app-nav-menu>
+        </div>
+    </div>
+  </div>
+</header>
